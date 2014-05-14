@@ -70,7 +70,7 @@ Following a successful decade of dealing with all aspects of new build residenti
 	
 	<!-- Main nav -->
 	<!-- special case for homepage, as we have the verticle lines -->
-	<?php include("includes/nav.php"); ?> 
+	<?php include("includes-2/nav.php"); ?> 
 	
 	<!-- Graphic footer -->
 	<ul id="fancy_split_footer">
@@ -82,7 +82,7 @@ Following a successful decade of dealing with all aspects of new build residenti
 	</ul>
 	
 	<!-- Footer -->
-	<?php include("includes/footer.php"); ?>
+	<?php include("includes-2/footer.php"); ?>
 	
 </div>
 
