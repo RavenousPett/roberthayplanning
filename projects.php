@@ -335,7 +335,7 @@ else
 	
 	<!-- Main nav -->
 	<!-- special case for homepage, as we have the verticle lines -->
-	<?php include("includes-2/nav.php"); ?> 
+	<?php include("includes/nav.php"); ?> 
 	
 	<!-- Graphic footer -->
 	<ul id="fancy_split_footer">
@@ -347,7 +347,7 @@ else
 	</ul>
 	
 	<!-- Footer -->
-	<?php include("includes-2/footer.php"); ?>
+	<?php include("includes/footer.php"); ?>
 	
 </div>
 
