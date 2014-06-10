@@ -8,6 +8,8 @@
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 
 <script type="text/javascript" src="js/animation.js"></script>
+ 
+<script type="text/javascript" src="js/captcha-customise.js"></script>
 
 <script type="text/javascript">
 
@@ -62,24 +64,32 @@ function validateForm(){
 			<form name="contactformfree" method="post" action="form/free_process.php">
 			
 			<div class="form_small_field">
-				<span>Name:</span><input type="text" name="name" id="frm_name" class="required" maxlength="100"/><span class="frm_star">*</span>
+				<span class="frm-span">Name:</span><input type="text" name="name" id="frm_name" class="required" maxlength="100"/><span class="frm_star">*</span>
 				<label class="error" for="cname" generated="true" style="display: none;">This field is required.</label>
 			</div>
 			
 			<div class="form_small_field">
-				<span>Email:</span><input type="text" name="email" id="frm_email" class="required" maxlength="50"/><span class="frm_star">*</span>
+				<span class="frm-span">Email:</span><input type="text" name="email" id="frm_email" class="required" maxlength="50"/><span class="frm_star">*</span>
 			</div>
 			
 			<div class="form_small_field">
-				<span>Phone:</span><input type="text" name="phone" id="frm_phone" class="required" maxlength="50"/>
+				<span class="frm-span">Phone:</span><input type="text" name="phone" id="frm_phone" class="required" maxlength="50"/>
 			</div>
 			
 			<div class="form_big_field" id="last-field">
-				<span>Enquiry:</span><textarea name="enquiry" id="enquiry" class="required"></textarea><span class="frm_star">*</span>
+				<span class="frm-span">Enquiry:</span><textarea name="enquiry" id="enquiry" class="required"></textarea><span class="frm_star">*</span>
 			
 				<a id="submit_btn" onclick="validateForm();"></a>				
 			</div>
-						
+
+			<div class="captcha-wrap">
+			<p>Please also fill in reCATPCHA form below.</p>
+			<?php
+	          require_once('recaptchalib.php');
+	          $publickey = "6LeWCPUSAAAAAPSMMf8wpAMQ8YzV6lPv7YbPteer"; // you got this from the signup page
+	          echo recaptcha_get_html($publickey);
+	        ?>		
+	        </div>
 			</form>
 			
 		</div>

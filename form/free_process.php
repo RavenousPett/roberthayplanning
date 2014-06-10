@@ -1,4 +1,22 @@
 <?php
+
+// Rich P - reCAPTCHA code
+require_once('../recaptchalib.php');
+$privatekey = "6LeWCPUSAAAAAN5sjix2-cFi9g45rK607CwcW8KS";
+$resp = recaptcha_check_answer ($privatekey,
+                            $_SERVER["REMOTE_ADDR"],
+                            $_POST["recaptcha_challenge_field"],
+                            $_POST["recaptcha_response_field"]);
+
+if (!$resp->is_valid) {
+// What happens when the CAPTCHA was entered incorrectly
+die ("The reCAPTCHA wasn't entered correctly. Please go back in your browser and try it again.");
+ // ."(reCAPTCHA said: " . $resp->error . ")");
+} else {
+// do nothing, carry on.
+}
+// end reCAPTCHA
+
 // URL: www.freecontactform.com
 // Version: FreeContactForm Free V1.3
 // Copyright (c) 2011 Stuart Cochrane <stuartc1@gmail.com>

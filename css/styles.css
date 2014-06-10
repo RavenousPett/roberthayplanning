@@ -840,7 +840,8 @@ background:url('../images/small_green_hr.jpg') repeat-x left bottom;
 .form_small_field{
 
 margin:20px 0 0 0;
-width:801px;
+/*width:801px;*/
+width:410px;
 height:37px;
 background:url('../images/small_frm_field_bg.jpg') repeat-x left bottom;
 }
@@ -853,7 +854,7 @@ height:85px;
 background:url('../images/small_frm_field_bg.jpg') repeat-x left bottom;
 }
 
-#contact_wrapper span{
+#contact_wrapper span.frm-span{
 
 width:54px;
 height:20px;
@@ -899,5 +900,15 @@ right: 10px;
 background-position:0px 22px;
 }
 
+.captcha-wrap{
+	position: absolute;
+	top: 90px;
+	right:70px;
+}
+
+.captcha-wrap p{
+	padding-left: 4px;
+	margin-bottom: 4px;
+}
 
 
