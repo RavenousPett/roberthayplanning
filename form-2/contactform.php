@@ -25,7 +25,7 @@
 	</head>
 	<body>
 	
-	<form name="contactformfree" method="post" action="form-2/free_process.php" onsubmit="return validateForm();">
+	<form name="contactformfree" method="post" action="form/free_process.php" onsubmit="return validateForm();">
 	<table width="590px" class="cffree">
 	<tr>
 	 <td valign="top" class="cffree_td">

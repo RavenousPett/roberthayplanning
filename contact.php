@@ -61,7 +61,7 @@ function validateForm(){
             </a>         
             </div>
 			
-			<form name="contactformfree" method="post" action="form/free_process.php">
+			<form name="contactformfree" method="post" action="form-2/free_process.php">
 			
 			<div class="form_small_field">
 				<span class="frm-span">Name:</span><input type="text" name="name" id="frm_name" class="required" maxlength="100"/><span class="frm_star">*</span>
@@ -100,7 +100,7 @@ function validateForm(){
 	
 	<!-- Main nav -->
 	<!-- special case for homepage, as we have the verticle lines -->
-	<?php include("includes/nav.php"); ?> 
+	<?php include("includes-2/nav.php"); ?> 
 	
 	<!-- Graphic footer -->
 	<ul id="fancy_split_footer">
@@ -112,7 +112,7 @@ function validateForm(){
 	</ul>
 	
 	<!-- Footer -->
-	<?php include("includes/footer.php"); ?>
+	<?php include("includes-2/footer.php"); ?>
 	
 </div>
 
