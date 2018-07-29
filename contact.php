@@ -38,6 +38,9 @@ function validateForm(){
 
 
 <link rel="icon" type="image/png" href="images/favicon.png">
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body>
@@ -61,25 +64,26 @@ function validateForm(){
 			
 			<form name="contactformfree" method="post" action="form-2/free_process.php">
 			
-			<div class="form_small_field">
-				<span class="frm-span">Name:</span><input type="text" name="name" id="frm_name" class="required" maxlength="100"/><span class="frm_star">*</span>
-				<label class="error" for="cname" generated="true" style="display: none;">This field is required.</label>
-			</div>
-			
-			<div class="form_small_field">
-				<span class="frm-span">Email:</span><input type="text" name="email" id="frm_email" class="required" maxlength="50"/><span class="frm_star">*</span>
-			</div>
-			
-			<div class="form_small_field">
-				<span class="frm-span">Phone:</span><input type="text" name="phone" id="frm_phone" class="required" maxlength="50"/>
-			</div>
-			
-			<div class="form_big_field" id="last-field">
-				<span class="frm-span">Enquiry:</span><textarea name="enquiry" id="enquiry" class="required"></textarea><span class="frm_star">*</span>
-			
-				<a id="submit_btn" onclick="validateForm();"></a>				
-			</div>
+				<div class="form_small_field">
+					<span class="frm-span">Name:</span><input type="text" name="name" id="frm_name" class="required" maxlength="100"/><span class="frm_star">*</span>
+					<label class="error" for="cname" generated="true" style="display: none;">This field is required.</label>
+				</div>
+				
+				<div class="form_small_field">
+					<span class="frm-span">Email:</span><input type="text" name="email" id="frm_email" class="required" maxlength="50"/><span class="frm_star">*</span>
+				</div>
+				
+				<div class="form_small_field">
+					<span class="frm-span">Phone:</span><input type="text" name="phone" id="frm_phone" class="required" maxlength="50"/>
+				</div>
+				
+				<div class="form_big_field" id="last-field">
+					<span class="frm-span">Enquiry:</span><textarea name="enquiry" id="enquiry" class="required"></textarea><span class="frm_star">*</span>
+				
+					<a id="submit_btn" onclick="validateForm();"></a>				
+				</div>
 
+				<div class="g-recaptcha" data-sitekey="6LeWCPUSAAAAAPSMMf8wpAMQ8YzV6lPv7YbPteer"></div>
 
 			</form>
 			

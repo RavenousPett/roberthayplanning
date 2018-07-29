@@ -1,5 +1,28 @@
 <?php
 
+// Rich P - reCAPTCHA code
+require_once('../recaptchalib.php');
+
+$secret = "6LeWCPUSAAAAAN5sjix2-cFi9g45rK607CwcW8KS";
+ 
+// empty response
+$response = null;
+ 
+// check secret key
+$reCaptcha = new ReCaptcha($secret);
+
+// if submitted check response
+if ($_POST["g-recaptcha-response"]) {
+    $response = $reCaptcha->verifyResponse(
+        $_SERVER["REMOTE_ADDR"],
+        $_POST["g-recaptcha-response"]
+    );
+}
+
+if (!$response->success) {
+    die("The reCAPTCHA wasn't entered correctly. Please go back in your browser and try it again.");
+}
+
 // URL: www.freecontactform.com
 // Version: FreeContactForm Free V1.3
 // Copyright (c) 2011 Stuart Cochrane <stuartc1@gmail.com>
