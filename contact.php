@@ -9,8 +9,6 @@
 
 <script type="text/javascript" src="js/animation.js"></script>
  
-<script type="text/javascript" src="js/captcha-customise.js"></script>
-
 <script type="text/javascript">
 
 function validateForm(){
@@ -82,14 +80,7 @@ function validateForm(){
 				<a id="submit_btn" onclick="validateForm();"></a>				
 			</div>
 
-			<div class="captcha-wrap">
-			<p>Please also fill in reCATPCHA form below.</p>
-			<?php
-	          require_once('recaptchalib.php');
-	          $publickey = "6LeWCPUSAAAAAPSMMf8wpAMQ8YzV6lPv7YbPteer"; // you got this from the signup page
-	          echo recaptcha_get_html($publickey);
-	        ?>		
-	        </div>
+
 			</form>
 			
 		</div>
