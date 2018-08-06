@@ -900,15 +900,12 @@ right: 10px;
 background-position:0px 22px;
 }
 
-.captcha-wrap{
+#contact_wrapper form.contact-form{
+	position: relative;
+}
+
+#contact_wrapper form .g-recaptcha{
 	position: absolute;
-	top: 90px;
-	right:70px;
+	top: 0px;
+	right: 0px;
 }
-
-.captcha-wrap p{
-	padding-left: 4px;
-	margin-bottom: 4px;
-}
-
-

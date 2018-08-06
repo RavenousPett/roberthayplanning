@@ -62,7 +62,7 @@ function validateForm(){
             </a>         
             </div>
 			
-			<form name="contactformfree" method="post" action="form-2/free_process.php">
+			<form name="contactformfree" method="post" action="form-2/free_process.php" class="contact-form">
 			
 				<div class="form_small_field">
 					<span class="frm-span">Name:</span><input type="text" name="name" id="frm_name" class="required" maxlength="100"/><span class="frm_star">*</span>
